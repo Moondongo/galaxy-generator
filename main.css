@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    overflow: hidden;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.load {
+    position: relative;
+    z-index: 10;
+    background-color: #636465;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+}
+.load > h1 {
+    animation: anim 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes anim {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeout {
+    animation: fade 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.disabled {
+    display: none;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
